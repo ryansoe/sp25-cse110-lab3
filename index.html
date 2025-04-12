@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta name="author" content="Ryan Soe">
+    <meta name="description" content="Meeting Minutes for CSE110 Project">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <main>
+        <nav>
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.youtube.com">Youtube</a>
+            <a href="https://www.github.com">Github</a>
+        </nav>
+        <header>
+            <h1>Meeting Minutes</h1>
+        </header>
+        <section>
+            <h2>CSE110 Project Meeting - Card Project First Brainstorm</h2>
+            <h3>Date: <time datetime="2023-10-18">April 12, 2025</time></h3>
+            
+            <h3>Attendance List</h3>
+            <ul>
+                <li>Ryan Soe</li>
+                <li>Bryan Doe</li>
+                <li>Jane Smith</li>
+                <li>Mike Johnson</li>
+            </ul>
+            
+            <hr>
+            
+            <h3>Meeting Agenda</h3>
+            <ol>
+                <li>Icebreaker</li>
+                <li>Review previous action items</li>
+                <li>Brainstorm timer functionality</li>
+                <li>Discuss UI design options</li>
+                <li>Assign tasks for next meeting</li>
+            </ol>
+            
+            <hr>
+            
+            <h3>Unfinished Business from Last Meeting</h3>
+            <p>
+                The team was <em>unable to complete</em> the initial research on popular card games. 
+                <span>This will be integrated into today's discussion.</span> Team members should come 
+                prepared with their findings for the next meeting.
+            </p>
+            
+            <h3>New Business</h3>
+            <div>
+                <p>
+                    Today we need to decide on the <b>core features</b> of our card game application 
+                    and begin planning the architecture. The <strong>main goal</strong> is to have a 
+                    working prototype by next week.
+                </p>
+            </div>
+            
+            <h3>Meeting Notes</h3>
+            <p>
+                <strong>Ryan Soe</strong> presented the initial concept for the interface.
+                <br>
+                <i>Key points included:</i> customizable card features, card game rules, and card game design.
+                <br>
+                The team agreed on a minimalist design approach for the first version.
+            </p>
+            
+            <h3>Diagrams & Architecture</h3>
+            <figure>
+                <img src="https://via.placeholder.com/400x300" alt="Card Game Diagram" width="400" height="300">
+                <figcaption>Figure 1: Proposed workflow for the Card Game application</figcaption>
+            </figure>
+            
+            <h3>Miscellaneous Comments & Questions</h3>
+            <details>
+                <summary>Questions about implementation technologies</summary>
+                <p>
+                    Bryan raised concerns about browser compatibility. The team decided to focus on Chrome and 
+                    Firefox for the initial release and expand support later.
+                </p>
+            </details>
+            
+            <details>
+                <summary>Additional feature requests</summary>
+                <p>
+                    Jane suggested adding a statistics dashboard. This was added to 
+                    the list of potential future features.
+                </p>
+            </details>
+            
+            <h3>Meeting Recordings</h3>
+            <section>
+                <h4>Audio Recording</h4>
+                <audio controls>
+                    <source src="meeting-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                
+                <h4>Video Recording</h4>
+                <video controls width="400" height="300">
+                    <source src="meeting-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </section>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h3>Feedback Form</h3>
+            <form>
+                <fieldset>
+                    <legend>Meeting Feedback</legend>
+                    
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
+                    <br><br>
+                    
+                    <label for="meeting-date">Meeting Date:</label>
+                    <input type="date" id="meeting-date" name="meeting-date">
+                    <br><br>
+                    
+                    <p>Did the meeting meet your expectations?</p>
+                    <input type="radio" id="yes" name="expectations" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="expectations" value="no">
+                    <label for="no">No</label>
+                    <br><br>
+                    
+                    <p>Select topics that were well covered (check all that apply):</p>
+                    <input type="checkbox" id="topic1" name="topics" value="design">
+                    <label for="topic1">Design</label>
+                    <input type="checkbox" id="topic2" name="topics" value="functionality">
+                    <label for="topic2">Functionality</label>
+                    <input type="checkbox" id="topic3" name="topics" value="timeline">
+                    <label for="topic3">Timeline</label>
+                    <br><br>
+                    
+                    <label for="feedback">Additional Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                    <br><br>
+                    
+                    <label for="team-role">Your Role in the Team:</label>
+                    <select id="team-role" name="team-role">
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="project-manager">Project Manager</option>
+                        <option value="tester">Tester</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="browser">Used Browser:</label>
+                    <input list="browsers" id="browser" name="browser">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                        <option value="Edge">
+                    </datalist>
+                    <br><br>
+                    
+                    <button type="submit">Submit Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 CSE110 Project Team. Last updated on <time datetime="2025-04-12">April 12, 2025</time>.</p>
+    </footer>
+  </body>
+</html>
