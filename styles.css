@@ -32,7 +32,7 @@ main {
 
 /* Navigation styling */
 .main-nav {
-    background-color: hsl(210, 29%, 97%); /* HSL color */
+    background-color: hsl(210, 29%, 97%);
     /* Longhand padding */
     padding-top: 1rem;
     padding-right: 1rem;
@@ -43,7 +43,7 @@ main {
     /* Longhand border */
     border-width: 2px;
     border-style: solid;
-    border-color: color-mix(in srgb, var(--primary-color, #2c3e50) 50%, white); /* color-mix with fallback */
+    border-color: #a8c6e0; /* Changed from color-mix to a solid color */
     border-radius: 8px;
     position: sticky;
     top: 0;
@@ -236,13 +236,11 @@ h3 ~ p {
 }
 
 /* Nested selector */
-.recordings-section {
-    & audio,
-    & video {
-        width: 100%;
-        max-width: 400px;
-        margin: 10px 0;
-    }
+.recordings-section audio,
+.recordings-section video {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
 }
 
 /* Media Queries for Responsive Design */
