@@ -1,0 +1,30 @@
+/* External styles for the meeting minutes page */
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+header h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+} 
