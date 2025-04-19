@@ -1,3 +1,10 @@
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* CSS Variables */
 :root {
     --primary-color: #2c3e50;
@@ -24,7 +31,7 @@ main {
 }
 
 /* Navigation styling */
-nav {
+.main-nav {
     background-color: hsl(210, 29%, 97%); /* HSL color */
     /* Longhand padding */
     padding-top: 1rem;
@@ -44,7 +51,7 @@ nav {
 }
 
 /* Header styling */
-header h1 {
+#page-header h1 {
     color: var(--primary-color, #2c3e50); /* CSS variable with fallback */
     text-align: center;
     text-decoration: underline;
@@ -55,7 +62,7 @@ header h1 {
 }
 
 /* Section styling */
-section {
+.meeting-section {
     /* Longhand margin */
     margin-top: 0;
     margin-right: 0;
@@ -76,7 +83,7 @@ section {
 }
 
 /* Form styling */
-form {
+#feedback-form {
     background-color: aliceblue; /* Named color */
     /* Shorthand padding */
     padding: 20px;
@@ -90,7 +97,7 @@ form {
 }
 
 /* Text styling for paragraphs */
-p {
+.business-text, .notes-text {
     color: #333;
     text-align: left;
     text-decoration: none;
@@ -98,7 +105,7 @@ p {
 }
 
 /* Text styling for links */
-a {
+.nav-link {
     color: #3498db;
     text-decoration: none;
     text-align: left;
@@ -106,8 +113,57 @@ a {
     padding: 5px 10px;
 }
 
-a:hover {
+/* Hover selector */
+.nav-link:hover {
     text-decoration: underline;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* Attribute selector */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Child combinator */
+.meeting-section > h2 {
+    margin-bottom: 1rem;
+}
+
+/* Adjacent sibling combinator */
+h3 + ul,
+h3 + ol {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+    margin-bottom: 1rem;
+}
+
+/* Descendant combinator */
+.meeting-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* :has() selector */
+.meeting-section:has(.diagram-container) {
+    background-color: #f9f9f9;
+}
+
+/* Nested selector */
+.recordings-section {
+    & audio,
+    & video {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
 }
 
 /* Media Queries for Responsive Design */
@@ -119,11 +175,11 @@ a:hover {
         padding: 15px;
     }
 
-    section {
+    .meeting-section {
         padding: 10px;
     }
 
-    form {
+    #feedback-form {
         max-width: 100%;
     }
 }
@@ -136,26 +192,26 @@ a:hover {
         min-width: 0;
     }
 
-    nav {
+    .main-nav {
         position: static;
         margin-bottom: 10px;
     }
 
-    header h1 {
+    #page-header h1 {
         font-size: 1.5em;
         margin: 1rem 0;
     }
 
-    section {
+    .meeting-section {
         padding: 8px;
         min-height: 150px;
     }
 
-    form {
+    #feedback-form {
         padding: 15px;
     }
 
-    a {
+    .nav-link {
         display: block;
         padding: 8px 0;
     }

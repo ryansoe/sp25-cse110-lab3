@@ -21,20 +21,20 @@
   </head>
   <body>
     <main>
-        <nav>
-            <a href="https://www.google.com">Google</a>
-            <a href="https://www.youtube.com">Youtube</a>
-            <a href="https://www.github.com">Github</a>
+        <nav class="main-nav">
+            <a href="https://www.google.com" class="nav-link">Google</a>
+            <a href="https://www.youtube.com" class="nav-link">Youtube</a>
+            <a href="https://www.github.com" class="nav-link">Github</a>
         </nav>
-        <header>
+        <header id="page-header">
             <h1>Meeting Minutes</h1>
         </header>
-        <section>
+        <section class="meeting-section">
             <h2 style="color: #2c3e50;">CSE110 Project Meeting - Card Project First Brainstorm</h2>
             <h3>Date: <time datetime="2023-10-18">April 12, 2025</time></h3>
             
             <h3>Attendance List</h3>
-            <ul>
+            <ul class="attendance-list">
                 <li>Ryan Soe</li>
                 <li>Bryan Doe</li>
                 <li>Jane Smith</li>
@@ -44,7 +44,7 @@
             <hr>
             
             <h3>Meeting Agenda</h3>
-            <ol>
+            <ol class="agenda-list">
                 <li>Icebreaker</li>
                 <li>Review previous action items</li>
                 <li>Brainstorm functionality</li>
@@ -55,14 +55,14 @@
             <hr>
             
             <h3>Unfinished Business from Last Meeting</h3>
-            <p>
+            <p class="business-text">
                 The team was <em>unable to complete</em> the initial research on popular card games. 
                 <span>This will be integrated into today's discussion.</span> Team members should come 
                 prepared with their findings for the next meeting.
             </p>
             
             <h3>New Business</h3>
-            <div>
+            <div class="new-business">
                 <p>
                     Today we need to decide on the <b>core features</b> of our card game application 
                     and begin planning the architecture. The <strong>main goal</strong> is to have a 
@@ -71,7 +71,7 @@
             </div>
             
             <h3>Meeting Notes</h3>
-            <p>
+            <p class="notes-text">
                 <strong>Ryan Soe</strong> presented the initial concept for the interface.
                 <br>
                 <i>Key points included:</i> customizable card features, card game rules, and card game design.
@@ -80,13 +80,13 @@
             </p>
             
             <h3>Diagrams & Architecture</h3>
-            <figure>
+            <figure class="diagram-container">
                 <img src="https://via.placeholder.com/400x300" alt="Card Game Diagram" width="400" height="300">
                 <figcaption>Figure 1: Proposed workflow for the Card Game application</figcaption>
             </figure>
             
             <h3>Miscellaneous Comments & Questions</h3>
-            <details>
+            <details class="question-details">
                 <summary>Questions about implementation technologies</summary>
                 <p>
                     Bryan raised concerns about browser compatibility. The team decided to focus on Chrome and 
@@ -94,7 +94,7 @@
                 </p>
             </details>
             
-            <details>
+            <details class="question-details">
                 <summary>Additional feature requests</summary>
                 <p>
                     Jane suggested adding a statistics dashboard. This was added to 
@@ -103,7 +103,7 @@
             </details>
             
             <h3>Meeting Recordings</h3>
-            <section>
+            <section class="recordings-section">
                 <h4>Audio Recording</h4>
                 <audio controls>
                     <source src="Carti.mp3" type="audio/mpeg">
@@ -120,9 +120,9 @@
         
         <hr>
         
-        <section>
+        <section class="feedback-section">
             <h3>Feedback Form</h3>
-            <form>
+            <form id="feedback-form">
                 <fieldset>
                     <legend>Meeting Feedback</legend>
                     
