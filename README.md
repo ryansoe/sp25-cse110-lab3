@@ -1,3 +1,3 @@
 # Lab 3 - Starter
 
-https://ryansoe.github.io/Lab2_Starter/
+https://ryansoe.github.io/sp25-cse110-lab3/
