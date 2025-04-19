@@ -1,3 +1,9 @@
+/* CSS Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+}
+
 /* External styles for the meeting minutes page */
 
 /* Main content styling */
@@ -6,25 +12,37 @@ main {
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    background-color: rgb(245, 245, 245); /* RGB color */
 }
 
 /* Navigation styling */
 nav {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: hsl(210, 29%, 97%); /* HSL color */
+    padding: 1rem; /* Relative unit */
     margin-bottom: 20px;
+    border: 2px solid color-mix(in srgb, var(--primary-color, #2c3e50) 50%, white); /* color-mix with fallback */
 }
 
 /* Header styling */
 header h1 {
-    color: #333;
+    color: var(--primary-color, #2c3e50); /* CSS variable with fallback */
     text-align: center;
+    font-size: 2em; /* Relative unit */
+    margin: 1.5rem 0; /* Relative unit */
 }
 
 /* Section styling */
 section {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Absolute unit */
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 15px; /* Absolute unit */
     border-radius: 5px;
+    background-color: white;
+}
+
+/* Form styling */
+form {
+    background-color: aliceblue; /* Named color */
+    padding: 20px; /* Absolute unit */
+    border-radius: 8px;
 } 
