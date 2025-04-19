@@ -9,7 +9,12 @@
 /* Main content styling */
 main {
     max-width: 800px;
-    margin: 0 auto;
+    /* Longhand margin */
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    /* Shorthand padding */
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: rgb(245, 245, 245); /* RGB color */
@@ -18,31 +23,74 @@ main {
 /* Navigation styling */
 nav {
     background-color: hsl(210, 29%, 97%); /* HSL color */
-    padding: 1rem; /* Relative unit */
-    margin-bottom: 20px;
-    border: 2px solid color-mix(in srgb, var(--primary-color, #2c3e50) 50%, white); /* color-mix with fallback */
+    /* Longhand padding */
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    /* Shorthand margin */
+    margin: 0 0 20px 0;
+    /* Longhand border */
+    border-width: 2px;
+    border-style: solid;
+    border-color: color-mix(in srgb, var(--primary-color, #2c3e50) 50%, white); /* color-mix with fallback */
+    border-radius: 8px;
 }
 
 /* Header styling */
 header h1 {
     color: var(--primary-color, #2c3e50); /* CSS variable with fallback */
     text-align: center;
+    text-decoration: underline;
     font-size: 2em; /* Relative unit */
+    /* Shorthand margin */
     margin: 1.5rem 0; /* Relative unit */
 }
 
 /* Section styling */
 section {
+    /* Longhand margin */
+    margin-top: 0;
+    margin-right: 0;
     margin-bottom: 30px; /* Absolute unit */
+    margin-left: 0;
+    /* Shorthand border */
     border: 1px solid #ddd;
-    padding: 15px; /* Absolute unit */
     border-radius: 5px;
+    /* Longhand padding */
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     background-color: white;
 }
 
 /* Form styling */
 form {
     background-color: aliceblue; /* Named color */
-    padding: 20px; /* Absolute unit */
+    /* Shorthand padding */
+    padding: 20px;
     border-radius: 8px;
+    /* Longhand border */
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #3498db;
+}
+
+/* Text styling for paragraphs */
+p {
+    color: #333;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* Text styling for links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    text-align: left;
+}
+
+a:hover {
+    text-decoration: underline;
 } 
